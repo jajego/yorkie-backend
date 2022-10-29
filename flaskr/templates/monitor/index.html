@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Monitors{% endblock %}</h1>
+  {% if g.user %}
+    <ul>
+      <li>
+        
+      </li>
+    </ul>
+    <a class="action" href="{{ url_for('monitor.create') }}">New</a>
+  {% endif %}
+{% endblock %}
+
+{% block content %}
+  {% for monitor in monitors %}
+    <article class="post">
+      <header>
+        <div>
+          <h1>{{ monitor['line'] }}</h1>
+          <h2>{{ monitor['station_name'] }}</h2>
+          <div class="about">by {{ monitor['username'] }} on {{ monitor['created'].strftime('%Y-%m-%d') }}</div>
+        </div>
+        {% if g.user['id'] == monitor['user_id'] %}
+          <a class="action" href="{{ url_for('monitor.update', id=monitor['id']) }}">Edit</a>
+        {% endif %}
+      </header>
+      <p class="body">{{ monitor['body'] }}</p>
+    </article>
+    {% if not loop.last %}
+      <hr>
+    {% endif %}
+  {% endfor %}
+{% endblock %}

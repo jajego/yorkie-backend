@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Edit "{{ monitor['title'] }}"{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+  <form method="post">
+    <label for="line">line</label>
+    <input name="line" id="line" value="{{ request.form['line'] or monitor['line'] }}" required>
+    <label for="station-name">station-name</label>
+    <textarea name="station-name" id="station-name">{{ request.form['station_name'] or monitor['station_name'] }}</textarea>
+    <input type="submit" value="Save">
+  </form>
+  <hr>
+  <form action="{{ url_for('monitor.delete', id=monitor['id']) }}" method="post">
+    <input class="danger" type="submit" value="Delete" onclick="return confirm('Are you sure?');">
+  </form>
+{% endblock %}

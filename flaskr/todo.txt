@@ -1,0 +1,15 @@
+- train details on hover via TrainExtraInfo component
+- make loading animations more in line with actual loading
+- more robust backend authetnication (Users can be spoofed since only auth is userId which is stored in localStorage)
+- Filter not filtering expresses
+- error display
+
+modes:
+- day/night
+- regular, compact
+
+
+broken stops
+-----------
+- shuttles
+- staten island

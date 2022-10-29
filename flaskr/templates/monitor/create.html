@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}New monitor{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+  <form method="post">
+    <label for="line">line</label>
+    <input name="line" id="line" value="{{ request.form['line'] }}" required>
+    <label for="station-name">station-name</label>
+    <input name="station-name" id="station-name" value="{{ request.form['station_name'] }}">
+    <input type="submit" value="Save">
+  </form>
+{% endblock %}
