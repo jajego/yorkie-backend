@@ -1,4 +1,3 @@
-from types import NoneType
 from nyct_gtfs import NYCTFeed
 import datetime
 import sys
