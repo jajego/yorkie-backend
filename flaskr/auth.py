@@ -14,8 +14,6 @@ from werkzeug.security import generate_password_hash
 
 from flaskr.db import get_db
 
-from flask_cors import cross_origin
-
 bp = Blueprint("auth", __name__, url_prefix="/auth")
 
 def login_required(view):
