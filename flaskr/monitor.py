@@ -11,8 +11,6 @@ from flask import current_app
 from flask import session
 
 
-from flask_cors import CORS
-
 from . import stationgetter
 
 from werkzeug.exceptions import abort
