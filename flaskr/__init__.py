@@ -1,3 +1,4 @@
+NoneType = type(None)
 import os
 
 import flaskr.api.nyct_api as nyct_api
