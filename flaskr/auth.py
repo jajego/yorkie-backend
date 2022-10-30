@@ -51,13 +51,11 @@ def register():
     password for security.
     """
     if request.method == "POST":
-        print('someone took the reg route')
         json = request.get_json()
         print(json)
         username = json["username"]
         password = json["password"]
-        print('username', username)
-        print('password', password)
+  
         db = get_db()
         error = None
 
