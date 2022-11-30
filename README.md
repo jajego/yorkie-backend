@@ -14,10 +14,6 @@ If you would like to run Yorkie locally, you will need to host:
 
 You will also need to get a free MTA API Key at https://api.mta.info/.
 
-# Accuracy
-
-Users should consider Yorkie's reports on the number of trains approaching a station an underestimate, as some trains will not appear in the feed due to service interruptions within the MTA.
-
 
 
 
