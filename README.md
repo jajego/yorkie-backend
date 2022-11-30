@@ -7,7 +7,9 @@
 ## Local use
 
 If you would like to run Yorkie locally, you will need to host:
-  - This repository (Satisfy package requirements via `requirements.txt` and then run `flask --app flaskr run`)
+  - This repository 
+    1. Create a virtual environment and run `pip install -r requirements.txt`
+    2. Run `flask --app flaskr run`
   - The [front-end](https://github.com/jajego/yorkie-frontend)
 
 You will also need to get a free MTA API Key at https://api.mta.info/.
