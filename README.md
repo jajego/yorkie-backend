@@ -4,7 +4,7 @@
 
 ![Photo of a Yorkie monitor at De Kalb avenue](https://i.imgur.com/qMcBX6j.png) 
 
-# Local use
+## Local use
 
 If you would like to run Yorkie locally, you will need to host:
   - This repository (Satisfy package requirements via `requirements.txt` and then run `flask --app flaskr run`)
