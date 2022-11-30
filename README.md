@@ -2,7 +2,7 @@
 
 # Yorkie
 
-Yorkie is a train tracking service for New York City built with React, Flask, and SQLite. It utilizes [Andrew Dickinson's excellent Python wrapper](https://github.com/Andrew-Dickinson/nyct-gtfs/tree/master/nyct_gtfs) for official [official MTA API](https://api.mta.info/#/landing). Users can register accounts and track up to four stations at a time.
+Yorkie is a fast, accurate train tracking service for New York City built with React, Flask, and SQLite. It utilizes [Andrew Dickinson's excellent Python wrapper](https://github.com/Andrew-Dickinson/nyct-gtfs/tree/master/nyct_gtfs) for official [official MTA API](https://api.mta.info/#/landing). Users can register accounts and track up to four stations at a time.
 
 ![This is an image](https://i.imgur.com/qMcBX6j.png) 
 
@@ -13,6 +13,10 @@ If you would like to run Yorkie locally, you will need to host:
   - The [front-end](https://github.com/jajego/yorkie-frontend)
 
 You will also need to get a free MTA API Key at https://api.mta.info/.
+
+# Accuracy
+
+Users should consider Yorkie's reports on the number of trains approaching a station an underestimate, as some trains will not appear in the feed due to service interruptions within the MTA.
 
 
 
